@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+
   let isScrolled = false
   let mobileMenuOpen = false
 
@@ -43,7 +45,7 @@
       {#each menuItems as item}
         <a
           href={item.href}
-          class="text-sm font-semibold uppercase tracking-widest text-gray-300 hover:text-red-500 transition-colors"
+          class="text-sm font-semibold uppercase tracking-widest transition-colors {$page.url.pathname === item.href ? 'text-red-600' : 'text-gray-300 hover:text-red-500'}"
         >
           {item.label}
         </a>
@@ -74,7 +76,7 @@
         <a
           href={item.href}
           on:click={closeMobileMenu}
-          class="text-lg font-bold uppercase text-white hover:text-red-600"
+          class="text-lg font-bold uppercase hover:text-red-600 {$page.url.pathname === item.href ? 'text-red-600' : 'text-white'}"
         >
           {item.label}
         </a>
