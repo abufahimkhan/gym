@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rasel Power Gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              oswald: ['Oswald', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .hero-gradient {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a0505 100%);
+      }
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-from-left {
+        from {
+          transform: translateX(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes zoom-in {
+        from {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-from-bottom-10 {
+        from {
+          transform: translateY(40px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .animate-in {
+        animation-fill-mode: both;
+      }
+      .fade-in {
+        animation-name: fade-in;
+      }
+      .slide-in-from-left {
+        animation-name: slide-in-from-left;
+      }
+      .zoom-in {
+        animation-name: zoom-in;
+      }
+      .slide-in-from-bottom-10 {
+        animation-name: slide-in-from-bottom-10;
+      }
+      .duration-1000 {
+        animation-duration: 1000ms;
+      }
+      .delay-300 {
+        animation-delay: 300ms;
+      }
+      .outline-text {
+        -webkit-text-stroke: 1px white;
+        text-stroke: 1px white;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #fff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+  </body>
+</html>

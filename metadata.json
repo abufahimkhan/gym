@@ -1,0 +1,8 @@
+
+{
+  "name": "Rasel Power Gym 2",
+  "description": "A premium, high-energy fitness and bodybuilding website for Rasel Power Gym 2, featuring modern animations, membership plans, and AI-powered motivational tools.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
