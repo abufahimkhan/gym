@@ -62,6 +62,7 @@ declare module '$env/static/private' {
 	export const LOGONSERVER: string;
 	export const NODE: string;
 	export const NODE_ENV: string;
+	export const NODE_PATH: string;
 	export const npm_command: string;
 	export const npm_config_frozen_lockfile: string;
 	export const npm_config_globalconfig: string;
@@ -192,6 +193,7 @@ declare module '$env/dynamic/private' {
 		LOGONSERVER: string;
 		NODE: string;
 		NODE_ENV: string;
+		NODE_PATH: string;
 		npm_command: string;
 		npm_config_frozen_lockfile: string;
 		npm_config_globalconfig: string;
