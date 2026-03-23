@@ -6,7 +6,7 @@
   <section class="pt-28 pb-12 text-center">
     <p class="text-red-600 font-bold uppercase tracking-[0.3em] text-xs">Visit Us</p>
     <h1 class="text-5xl md:text-6xl font-oswald font-bold uppercase italic mt-2">Contact & Location</h1>
-    <p class="text-gray-400 max-w-2xl mx-auto mt-4">Reach out or drop by. We're at the heart of Khulna's fitness community.</p>
+    <p class="text-gray-400 max-w-2xl mx-auto mt-4">Reach out or drop by. We're at the heart of Austin's fitness community.</p>
   </section>
 
   <section class="container mx-auto px-6 pb-24 grid lg:grid-cols-2 gap-12 items-center">
@@ -15,7 +15,7 @@
       <ul class="space-y-4 text-gray-300">
         <li class="flex items-start gap-3">
           <i class="fas fa-location-dot text-red-600 mt-1"></i>
-          <span>{LOCATION}<br />Khulna 9100, Bangladesh</span>
+          <span>{LOCATION}<br />Austin, TX 78701, USA</span>
         </li>
         <li class="flex items-center gap-3">
           <i class="fas fa-phone text-red-600"></i>
@@ -23,7 +23,7 @@
         </li>
         <li class="flex items-center gap-3">
           <i class="fas fa-envelope text-red-600"></i>
-          <span>info@raselpowergym.com</span>
+          <span>info@usapowergym.com</span>
         </li>
       </ul>
       <div class="flex gap-4">
@@ -47,7 +47,7 @@
 
     <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-red-600/5">
       <a href={MAP_LINK} target="_blank" rel="noopener noreferrer">
-        <img src="/location2.png" alt={`${APP_NAME} map location`} class="w-full h-full object-cover" />
+        <img src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&w=800&q=80" alt={`${APP_NAME} map location`} class="w-full h-full object-cover" />
         <div class="absolute inset-0 flex items-center justify-center bg-black/40 text-white font-bold uppercase tracking-[0.3em]">Open in Google Maps</div>
       </a>
     </div>

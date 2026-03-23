@@ -20,11 +20,11 @@
           <span
             class="text-xl font-oswald font-bold tracking-tighter text-white uppercase italic"
           >
-            Rasel <span class="text-red-600">Power</span>
+            USA <span class="text-red-600">Power</span>
           </span>
         </div>
         <p class="text-gray-500 text-sm leading-relaxed">
-          Leading the fitness revolution in Khulna since our inception. We
+          Leading the fitness revolution in Austin, Texas since our inception. We
           provide a powerhouse environment for those who dare to dream big.
         </p>
         <div class="flex gap-4">
@@ -65,7 +65,7 @@
           <li class="flex items-start gap-3">
             <i class="fas fa-location-dot text-red-600 mt-1"></i>
             <span class="text-gray-500 text-sm"
-              >{LOCATION}<br />Khulna 9100, Bangladesh</span
+              >{LOCATION}<br />Austin, TX 78701, USA</span
             >
           </li>
           <li class="flex items-center gap-3">
@@ -74,7 +74,7 @@
           </li>
           <li class="flex items-center gap-3">
             <i class="fas fa-envelope text-red-600"></i>
-            <span class="text-gray-500 text-sm">info@raselpowergym.com</span>
+            <span class="text-gray-500 text-sm">info@usapowergym.com</span>
           </li>
         </ul>
       </div>
@@ -88,8 +88,8 @@
         >
           <a href={MAP_LINK} target="_blank" rel="noopener noreferrer">
             <img
-              src="/location1.png"
-              alt="Map Placeholder"
+              src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&w=800&q=80"
+              alt="USA Gym Location Map"
               class="w-full h-full object-cover"
             />
             <div
@@ -100,7 +100,7 @@
           </a>
         </div>
         <p class="text-gray-500 text-xs">
-          Rasel Power Gym 2 - Located at the heart of Khulna's fitness
+          USA Power Gym - Located at the heart of Austin's fitness
           community.
         </p>
       </div>
@@ -110,7 +110,7 @@
       class="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-600 text-xs uppercase tracking-[0.2em]"
     >
       <p>
-        © {new Date().getFullYear()} Rasel Power Gym 2. All Rights Reserved.
+        © {new Date().getFullYear()} USA Power Gym. All Rights Reserved.
       </p>
       <div class="flex gap-6">
         <a href="/privacy" class="hover:text-white transition-colors"

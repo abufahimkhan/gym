@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
         {
-            name: "rasel-power-gym",
+            name: "usa-power-gym",
             script: "build/index.js",
             watch: false,
             env: {
