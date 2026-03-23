@@ -1,25 +1,47 @@
 {
   "name": "usa-power-gym",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.3.1",
-    "@sveltejs/adapter-node": "^5.5.1",
-    "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/adapter-vercel": "^6.3.3",
-    "@sveltejs/kit": "^2.0.0",
-    "@sveltejs/vite-plugin-svelte": "^5.0.0",
-    "@types/node": "^22.14.0",
+    "@internationalized/date": "^3.9.0",
+    "@lucide/svelte": "^0.544.0",
+    "@sveltejs/adapter-auto": "^6.0.0",
+    "@sveltejs/adapter-vercel": "1.0.0",
+    "@sveltejs/kit": "^2.22.0",
+    "@sveltejs/vite-plugin-svelte": "^6.0.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/vite": "^4.1.13",
+    "bits-ui": "^2.11.8",
+    "clsx": "^2.1.1",
     "svelte": "^5.0.0",
     "svelte-check": "^4.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "tailwind-merge": "^3.3.1",
+    "tailwind-variants": "^1.0.0",
+    "tailwindcss": "^4.1.13",
+    "tw-animate-css": "^1.3.8",
+    "typescript": "^5.0.0",
+    "vite": "^7.0.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ],
+    "allowedBuildDependencies": [
+      "@tailwindcss/oxide"
+    ]
+  },
+  "dependencies": {
+    "lockfile": "^1.0.4",
+    "lucide-svelte": "^0.544.0",
+    "mode-watcher": "^1.1.0"
   }
 }
